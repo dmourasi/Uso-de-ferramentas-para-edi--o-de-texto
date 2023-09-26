@@ -7,7 +7,7 @@
 \usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=2cm,marginparwidth=2cm]{geometry}
 \usepackage{xcolor}
 \usepackage{setspace}
-\usepackage{enumitem}
+\usepackage[shortlabels,inline]{enumitem}
 \usepackage{ulem}
 \usepackage{pifont}
 
@@ -19,17 +19,27 @@
 \begin{document}
 \maketitle
 
-\begin{abstract}
+\begin{center}
+    \begin{minipage}{0.75\textwidth}
 \textbf{{\textcolor{blue}{Instru\c{c}\~{o}es gerais}}} para elabora\c{c}\~{a}o deste documento est\~{a}o apresentadas aqui: foi utilizado 
 um documento do tipo artigo com \underline{uma coluna}, papel a4, margem de 2cm (esquerda, direita, superior e inferior); 
 comandos para inser\c{c}\~{a}o de \textit{t\'{i}tulo}, \textbf{autor} e \textsc{data} foram utilizados, {\textcolor{red}{fa\c{c}a pesquisa de quais s\~{a}o 
-esses comandos e utilize-os!!!}; o \underline{espa\c{c}amento} entre linhas \'{e} duplo. Este texto est\'{a} em uma caixa de 
-texto centralizada com largura igual a 75\% da largura do texto. O nome do discente deve ser substitu\'{i}do em “Seu nome”.
-\end{abstract}
+esses comandos e utilize-os!!!}}; o \underline{espa\c{c}amento} entre linhas \'{e} duplo. Este texto est\'{a} em uma caixa de 
+texto centralizada com largura igual a 75\% da largura do texto. O nome do discente deve ser substitu\'{i}do em “Seu nome”. {\color{red}\ding{110}}
+    \end{minipage}
+\end{center}
 
-\section{Introduction}
-
-Your introduction goes here!
-
+\begin{flushleft}
+Para garantir a format\c{c}\~{a}o os seguintes \colorbox{gray}{pacotes} foram utilizados: \\
+    \begin{enumerate*}[(i),itemjoin=\hfill]
+        \item {\color{blue}babel} 
+        \item {\color{blue}geometry} 
+        \item {\color{blue}xcolor}
+        \item {\color{blue}setspace} 
+        \item {\color{blue}enumitem} 
+        \item {\color{blue}ulem} 
+        \item {\color{blue}pifont}
+    \end{enumerate*}
+\end{flushleft}
 
 \end{document}
