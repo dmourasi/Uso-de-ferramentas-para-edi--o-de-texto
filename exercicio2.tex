@@ -4,7 +4,7 @@
 % pacotes
 
 \usepackage[english,brazil]{babel}
-\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=2cm,marginparwidth=2cm]{geometry}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=2cm]{geometry}
 \usepackage{xcolor}
 \usepackage{setspace}
 \usepackage[shortlabels,inline]{enumitem}
@@ -40,6 +40,53 @@ Para garantir a format\c{c}\~{a}o os seguintes \colorbox{gray}{pacotes} foram ut
         \item {\color{blue}ulem} 
         \item {\color{blue}pifont}
     \end{enumerate*}
+    \fcolorbox{red}{gray}{\textcolor{green}{!!!Nenhum pacote — al\'{e}m dos descritos acima — deve ser utilizados na elabora\c{c}\~{a}o deste documento!!!}}
 \end{flushleft}
+\begin{center}
+    \begin{minipage}{0.3\textwidth}
+        \centering
+        \fbox{\parbox{0.8\linewidth}{{Este par\'{a}grafo est\'{a} contido em uma caixa com 4.5 cent\'{i}metros de largura. Voc\^{e} pode acreditar que o texto que est\'{a} acima e abaixo desta
+        caixa dista um cent\'{i}metro da caixa}
+        }
+      }
+    \end{minipage}
+    \begin{minipage}{0.3\textwidth}
+      \centering
+      \fbox{\parbox{0.8\linewidth}{{Este par\'{a}grafo est\'{a} contido em uma caixa com 4.5 cent\'{i}metros de largura. Voc\^{e} pode acreditar que o texto que est\'{a} acima e abaixo desta
+      caixa dista um cent\'{i}metro da caixa}
+      }
+    }
+    \end{minipage}%
+    \begin{minipage}{0.3\textwidth}
+      \centering
+      \fbox{\parbox{0.8\linewidth}{{Este par\'{a}grafo est\'{a} contido em uma caixa com 4.5 cent\'{i}metros de largura. Voc\^{e} pode acreditar que o texto que est\'{a} acima e abaixo desta
+      caixa dista um cent\'{i}metro da caixa}
+      }
+    }
+    \end{minipage}
+  \end{center}
+  \begin{flushleft}
+    A forma como o {\color{blue}\LaTeX} trata o espa\c{c}amento entre as \sout{palavras} \'{e} realmente curioso!\hspace{0.2\textwidth}Este espa\c{c}o
+    em branco mede dois cent\'{i}metros
+  \end{flushleft}
+  \vspace{0.5cm} 
+
+  \noindent
+  
+  \begin{center}
+    \vspace{0.5cm}
+    \fcolorbox{red}{green!10}{%
+    \parbox{3in}{%
+      \color{black} % Cor do texto em preto
+      Este par\'{a}grafo est\'{a} contido em uma caixa com tr\^{e}s polegadas de largura. 10\% de verde foi utilizado para preencher o fundo e a cor vermelha
+para contornar a caixa. A caixa est\'{a} centralizada e a dist\^{a}ncia entre ela e o texto acima \'{e} de 0.5 cent\'{i}metro.
+    }
+  }
+\end{center}
+
+O fim \hfill do \hfill documento.
+
+{\color{red}\ding{168}} {\color{blue}\hrulefill} {\color{red}\ding{168}}  
 
 \end{document}
+
