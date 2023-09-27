@@ -1,10 +1,7 @@
-\documentclass[a4paper]{article}
-
-
-% pacotes
+\documentclass{article}
 
 \usepackage[english,brazil]{babel}
-\usepackage[letterpaper,top=2cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=2cm]{geometry}
+\usepackage[a4paper,top=2cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=2cm]{geometry}
 \usepackage{xcolor}
 \usepackage{setspace}
 \usepackage[shortlabels,inline]{enumitem}
@@ -16,68 +13,76 @@
 \author{Daniel Moura Silva}
 \date{25 de Setembro de 2023}
 
+\doublespacing
+
 \begin{document}
 \maketitle
 
 \begin{center}
-    \begin{minipage}{0.75\textwidth}
+\mbox{\begin{minipage}[t]{0.75\textwidth}
 \textbf{{\textcolor{blue}{Instru\c{c}\~{o}es gerais}}} para elabora\c{c}\~{a}o deste documento est\~{a}o apresentadas aqui: foi utilizado 
 um documento do tipo artigo com \underline{uma coluna}, papel a4, margem de 2cm (esquerda, direita, superior e inferior); 
 comandos para inser\c{c}\~{a}o de \textit{t\'{i}tulo}, \textbf{autor} e \textsc{data} foram utilizados, {\textcolor{red}{fa\c{c}a pesquisa de quais s\~{a}o 
 esses comandos e utilize-os!!!}}; o \underline{espa\c{c}amento} entre linhas \'{e} duplo. Este texto est\'{a} em uma caixa de 
 texto centralizada com largura igual a 75\% da largura do texto. O nome do discente deve ser substitu\'{i}do em “Seu nome”. {\color{red}\ding{110}}
     \end{minipage}
-\end{center}
+}
+
 
 \begin{flushleft}
 Para garantir a format\c{c}\~{a}o os seguintes \colorbox{gray}{pacotes} foram utilizados: \\
     \begin{enumerate*}[(i),itemjoin=\hfill]
-        \item {\color{blue}babel} 
-        \item {\color{blue}geometry} 
-        \item {\color{blue}xcolor}
-        \item {\color{blue}setspace} 
-        \item {\color{blue}enumitem} 
-        \item {\color{blue}ulem} 
-        \item {\color{blue}pifont}
+        \item {\color{blue}\texttt{babel}} 
+        \item {\color{blue}\texttt{geometry}} 
+        \item {\color{blue}\texttt{xcolor}}
+        \item {\color{blue}\texttt{setspace}} 
+        \item {\color{blue}\texttt{enumitem}} 
+        \item {\color{blue}\texttt{ulem}}
+        \item {\color{blue}\texttt{pifont}}
     \end{enumerate*}
     \fcolorbox{red}{gray}{\textcolor{green}{!!!Nenhum pacote — al\'{e}m dos descritos acima — deve ser utilizados na elabora\c{c}\~{a}o deste documento!!!}}
 \end{flushleft}
+
+\vspace{0.1cm}
+
 \begin{center}
     \begin{minipage}{0.3\textwidth}
         \centering
-        \fbox{\parbox{0.8\linewidth}{{Este par\'{a}grafo est\'{a} contido em uma caixa com 4.5 cent\'{i}metros de largura. Voc\^{e} pode acreditar que o texto que est\'{a} acima e abaixo desta
-        caixa dista um cent\'{i}metro da caixa}
+        \fbox{\parbox{4.5cm}{{Este par\'{a}grafo est\'{a} contido em uma caixa com 4.5 cent\'{i}metros de largura. Voc\^{e} pode acreditar que o texto que est\'{a} acima e abaixo desta
+        caixa dista um cent\'{i}metro da caixa!}
         }
       }
     \end{minipage}
+    \hfill
     \begin{minipage}{0.3\textwidth}
       \centering
-      \fbox{\parbox{0.8\linewidth}{{Este par\'{a}grafo est\'{a} contido em uma caixa com 4.5 cent\'{i}metros de largura. Voc\^{e} pode acreditar que o texto que est\'{a} acima e abaixo desta
-      caixa dista um cent\'{i}metro da caixa}
-      }
-    }
-    \end{minipage}%
-    \begin{minipage}{0.3\textwidth}
-      \centering
-      \fbox{\parbox{0.8\linewidth}{{Este par\'{a}grafo est\'{a} contido em uma caixa com 4.5 cent\'{i}metros de largura. Voc\^{e} pode acreditar que o texto que est\'{a} acima e abaixo desta
-      caixa dista um cent\'{i}metro da caixa}
+      \fbox{\parbox{4.5cm}{{Este par\'{a}grafo est\'{a} contido em uma caixa com 4.5 cent\'{i}metros de largura. Voc\^{e} pode acreditar que o texto que est\'{a} acima e abaixo desta
+      caixa dista um cent\'{i}metro da caixa!}
       }
     }
     \end{minipage}
-  \end{center}
+    \hfill
+    \begin{minipage}{0.3\textwidth}
+      \centering
+      \fbox{\parbox{4.5cm}{{Este par\'{a}grafo est\'{a} contido em uma caixa com 4.5 cent\'{i}metros de largura. Voc\^{e} pode acreditar que o texto que est\'{a} acima e abaixo desta
+      caixa dista um cent\'{i}metro da caixa!}
+      }
+    }
+    \end{minipage}  
+\end{center}
+
+\vspace{0.1cm}
+
   \begin{flushleft}
     A forma como o {\color{blue}\LaTeX} trata o espa\c{c}amento entre as \sout{palavras} \'{e} realmente curioso!\hspace{0.2\textwidth}Este espa\c{c}o
-    em branco mede dois cent\'{i}metros
+  em branco mede dois cent\'{i}metros. 
   \end{flushleft}
-  \vspace{0.5cm} 
 
-  \noindent
+  \vspace{0.5cm} 
   
-  \begin{center}
-    \vspace{0.5cm}
-    \fcolorbox{red}{green!10}{%
-    \parbox{3in}{%
-      \color{black} % Cor do texto em preto
+    \fcolorbox{red}{green!10}{
+    \parbox{3in}{
+      \color{black}
       Este par\'{a}grafo est\'{a} contido em uma caixa com tr\^{e}s polegadas de largura. 10\% de verde foi utilizado para preencher o fundo e a cor vermelha
 para contornar a caixa. A caixa est\'{a} centralizada e a dist\^{a}ncia entre ela e o texto acima \'{e} de 0.5 cent\'{i}metro.
     }
