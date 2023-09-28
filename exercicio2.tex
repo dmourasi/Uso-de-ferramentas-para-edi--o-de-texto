@@ -7,7 +7,8 @@
 \usepackage[shortlabels,inline]{enumitem}
 \usepackage{ulem}
 \usepackage{pifont}
-
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
 
 \title{Uso de editores de textos na elabora\c{c}\~{a}o de documentos cient\'{i}ficos}
 \author{Daniel Moura Silva}
@@ -72,11 +73,12 @@ Para garantir a format\c{c}\~{a}o os seguintes \colorbox{gray}{pacotes} foram ut
 \end{center}
 
 \vspace{0.1cm}
-
-  \begin{flushleft}
-    A forma como o {\color{blue}\LaTeX} trata o espa\c{c}amento entre as \sout{palavras} \'{e} realmente curioso!\hspace{0.2\textwidth}Este espa\c{c}o
+\begin{flushleft}
+  \begin{changemargin}{-0.5cm}{0.0cm}
+   \hspace{0.5cm} A forma como o {\color{blue}\LaTeX} trata o espa\c{c}amento entre as \sout{palavras} \'{e} realmente curioso!\hspace{0.2\textwidth}Este espa\c{c}o
   em branco mede dois cent\'{i}metros. 
-  \end{flushleft}
+  \end{changemargin}
+\end{flushleft}
 
   \vspace{0.5cm} 
   
